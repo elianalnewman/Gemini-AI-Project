@@ -36,12 +36,12 @@ export default function MyGenAIComponent() {
         throw new Error(text || "Failed to generate content");
       }
 
-      const reader = apiResponse.body.getReader();
+      const reader = apiResponse.body?.getReader();
       const decoder = new TextDecoder();
       let result = "";
 
       while (true) {
-        const { done, value } = await reader.read();
+        const { done, value } = await reader!.read();
         if (done) break;
         result += decoder.decode(value, { stream: true });
         console.log(result);
