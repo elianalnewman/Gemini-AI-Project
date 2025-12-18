@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Initialize Vertex with your Cloud project and location
+
 export const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY!,
 });
@@ -8,7 +8,6 @@ const model = "gemini-2.5-flash";
 
 const tools = [{ googleSearch: {} }];
 
-// Set up generation config
 const generationConfig = {
   maxOutputTokens: 65535,
   temperature: 1,

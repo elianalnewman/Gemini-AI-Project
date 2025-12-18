@@ -1,4 +1,3 @@
-// component: MyGenAIComponent
 "use client";
 import React, { useState } from "react";
 import "./AiGenerator.css";
@@ -44,11 +43,11 @@ export default function MyGenAIComponent() {
         const { done, value } = await reader!.read();
         if (done) break;
         result += decoder.decode(value, { stream: true });
-        console.log(result);
+        
         
         const formattedResult = formatText(result);
         setResponse(formattedResult);
-        console.log(response);
+        
         
 
       }

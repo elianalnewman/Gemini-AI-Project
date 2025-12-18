@@ -1,20 +1,19 @@
 /* Container */
 
 .title {
-  font-size: 3em; /* Make it large and prominent */
-  font-weight: 700; /* Extra bold */
-  text-align: center; /* Ensure it's centered */
-  margin-bottom: 50px; /* Plenty of space below the title */
-  letter-spacing: -0.02em; /* Slightly tighter letter spacing for a modern look */
-  line-height: 1.1; /* Slightly tighter line height */
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft, subtle shadow for depth */
-  /* Optional: if you want a subtle gradient */
-  background: linear-gradient(45deg, #3f51b5, #007bff); 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(45deg, #3f51b5, #007bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
 }
-
-
 
 .app {
   max-width: 70%;
@@ -89,9 +88,8 @@
 /* Response */
 
 .response {
-  /* white-space: pre-wrap;*/
   margin-top: 24px;
-  padding: 18px 25px; 
+  padding: 18px 25px;
   border-radius: 14px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -99,34 +97,12 @@
   animation: fadeIn 0.25s ease;
 }
 .response-word {
-    margin: 0 0 8px;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #6366f1;
-    }
-    /*
-
-.response p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #374151;
+  margin: 0 0 8px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6366f1;
 }
-
-.response ol li {
-  margin: 0;
-  padding: 0;
-}
-.response ul li {
-  margin: 0;
-  padding: 0;
-}
-.response ul {
-  margin: 0;
-  padding: 0;
-} */
-
 
 /* Wrapper for markdown output */
 .markdown {
@@ -167,11 +143,10 @@
   margin: 0.15rem 0;
 }
 
-.markdown hr{
-    margin-top: 8px;
+.markdown hr {
+  margin-top: 8px;
 }
 
-/* Remove extra spacing react-markdown sometimes adds */
 .markdown > *:first-child {
   margin-top: 0;
 }
@@ -179,7 +154,6 @@
 .markdown > *:last-child {
   margin-bottom: 0;
 }
-
 
 /* Animation */
 @keyframes fadeIn {
@@ -192,4 +166,3 @@
     transform: translateY(0);
   }
 }
-
